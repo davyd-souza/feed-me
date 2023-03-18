@@ -1,0 +1,28 @@
+.header {
+  background-color: var(--gray-600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding-block: 1.25em;
+}
+
+.header > img {
+  height: 2.25rem;
+}
+
+.logoName {
+  display: grid;
+  place-items: center;
+  line-height: 1;
+}
+
+.logoTitle {
+  font-size: 1.825rem;
+  font-weight: 700;
+}
+
+.logoName > p {
+  font-size: 0.825rem;
+}
