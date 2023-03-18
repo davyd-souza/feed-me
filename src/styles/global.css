@@ -1,3 +1,19 @@
+:root {
+  --white: hsl(0, 0%, 100%); /* #fff */
+
+  --gray-100: hsl(240, 9%, 89%); /* #e1e1e6 */
+  --gray-300: hsl(240, 7%, 78%); /* #c4c4cc */
+  --gray-400: hsl(240, 6%, 58%); /* #8d8d99 */
+  --gray-600: hsl(240, 6%, 21%); /* #323238 */
+  --gray-700: hsl(240, 6%, 17%); /* #29292e */
+  --gray-800: hsl(240, 6%, 13%); /* #202024 */
+  --gray-900: hsl(240, 5%, 8%); /* #121214 */
+
+  --green-500: hsl(162, 100%, 27%); /* #00875f */
+
+  --ff-primary: 'Roboto', sans-serif;
+}
+
 /* CSS RESET */
 /* 1. Use a more-intuitive box-sizing model. */
 *,
@@ -25,8 +41,9 @@ body {
   5. Improve text rendering
 */
 body {
-  background-color: #121214;
-  color: #fff;
+  background-color: var(--gray-900);
+  color: var(--gray-300);
+  font-family: var(--ff-primary);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
