@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--gray-600);
+  background-color: hsl(var(--gray-800));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@
 .logoName {
   display: grid;
   place-items: center;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .logoTitle {
@@ -24,5 +24,5 @@
 }
 
 .logoName > p {
-  font-size: 0.825rem;
+  font-size: 0.875rem;
 }

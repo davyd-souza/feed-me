@@ -1,16 +1,16 @@
 :root {
-  --white: hsl(0, 0%, 100%); /* #fff */
+  --white: 0, 0%, 100%; /* #fff */
 
-  --gray-100: hsl(240, 9%, 89%); /* #e1e1e6 */
-  --gray-300: hsl(240, 7%, 78%); /* #c4c4cc */
-  --gray-400: hsl(240, 6%, 58%); /* #8d8d99 */
-  --gray-600: hsl(240, 6%, 21%); /* #323238 */
-  --gray-700: hsl(240, 6%, 17%); /* #29292e */
-  --gray-800: hsl(240, 6%, 13%); /* #202024 */
-  --gray-900: hsl(240, 5%, 8%); /* #121214 */
+  --gray-100: 240, 9%, 89%; /* #e1e1e6 */
+  --gray-300: 240, 7%, 78%; /* #c4c4cc */
+  --gray-400: 240, 6%, 58%; /* #8d8d99 */
+  --gray-600: 240, 6%, 21%; /* #323238 */
+  --gray-700: 240, 6%, 17%; /* #29292e */
+  --gray-800: 240, 6%, 13%; /* #202024 */
+  --gray-900: 240, 5%, 8%; /* #121214 */
 
-  --primary-400: hsl(46, 99%, 44%); /* #e1ad01 */
-  --primary-300: hsl(46, 79%, 56%); /* #e7bd34 */
+  --primary-400: 46, 99%, 44%; /* #e1ad01 */
+  --primary-300: 46, 79%, 56%; /* #e7bd34 */
 
   --ff-primary: 'Roboto', sans-serif;
 }
@@ -42,8 +42,8 @@ body {
   5. Improve text rendering
 */
 body {
-  background-color: var(--gray-900);
-  color: var(--gray-300);
+  background-color: hsl(var(--gray-900));
+  color: hsl(var(--gray-300));
   font-family: var(--ff-primary);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
