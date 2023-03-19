@@ -1,11 +1,12 @@
 // COMPONENT
 import { Header } from './components/Header'
 
+// STYLE
 import styles from './App.module.css'
 
 export function App() {
   return (
-    <div className='App'>
+    <div className={styles.App}>
       <Header />
 
       <div className={styles.container}>
