@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5em;
+  padding-block: 0.5em;
+  padding-inline: 0.875em;
 
   cursor: pointer;
 
@@ -22,6 +23,17 @@
   width: 1.5em;
   height: 1.5em;
   flex-shrink: 0;
+}
+
+.button[data-variant='fill'] {
+  color: hsl(var(--gray-800));
+  font-weight: 700;
+  background-color: hsl(var(--primary-400));
+}
+
+.button[data-variant='fill']:is(:hover, :focus-visible) {
+  outline: transparent;
+  background-color: hsl(var(--primary-300));
 }
 
 .button[data-variant='outline'] {
