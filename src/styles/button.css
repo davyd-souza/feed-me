@@ -1,0 +1,35 @@
+.button {
+  all: unset;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+
+  cursor: pointer;
+
+  border-radius: 0.5rem;
+
+  text-decoration: none;
+  color: hsl(var(--gray-300));
+  text-align: center;
+}
+
+.button > svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.button[data-variant='outline'] {
+  color: hsl(var(--primary-300));
+  font-weight: 700;
+
+  border-color: hsl(var(--primary-300));
+  border-width: 1px;
+  border-style: solid;
+}
+
+.button[data-variant='outline']:is(:hover, :focus-visible) {
+  outline: transparent;
+  background-color: hsla(var(--primary-300), 0.1);
+}
