@@ -1,5 +1,6 @@
 // COMPONENT
 import { Header } from './components/Header'
+import { Sidebar } from './components/Sidebar'
 
 // STYLE
 import styles from './App.module.css'
@@ -10,7 +11,7 @@ export function App() {
       <Header />
 
       <div className={styles.container}>
-        <aside>sidebar</aside>
+        <Sidebar />
         <main>feed</main>
       </div>
     </div>
