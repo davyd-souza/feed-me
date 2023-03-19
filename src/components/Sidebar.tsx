@@ -29,7 +29,7 @@ export function Sidebar() {
       <footer className={styles.footer}>
         <a className='button' href='#' data-variant='outline'>
           <PencilLine />
-          Editar seu perfil
+          Edit profile
         </a>
       </footer>
     </aside>
