@@ -2,6 +2,7 @@
 import { PencilLine } from 'phosphor-react'
 import styles from './Sidebar.module.css'
 import '../styles/button.css'
+import '../styles/global.css'
 
 export function Sidebar() {
   return (
@@ -13,16 +14,17 @@ export function Sidebar() {
         alt=''
       />
 
-      <div className={styles.profile}>
+      <section className={styles.profile}>
         <img
-          className={styles.profile__img}
+          className='user__avatar'
           src='https://github.com/davyd-souza.png'
           alt='Davyd Souza'
         />
-
-        <p className={styles.profile__name}>Davyd Souza</p>
-        <span className={styles.profile__role}>Web Developer</span>
-      </div>
+        <div className={styles.profile__info}>
+          <p className='user__name'>Davyd Souza</p>
+          <span className='user__role'>Web Developer</span>
+        </div>
+      </section>
 
       <footer className={styles.footer}>
         <a className='button' href='#' data-variant='outline'>
