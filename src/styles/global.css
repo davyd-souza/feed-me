@@ -88,6 +88,10 @@ h6 {
   color: hsl(var(--gray-100));
 }
 
+.user__name[data-size='sm'] {
+  font-size: 0.875rem;
+}
+
 .user__role {
   color: hsl(var(--gray-400));
   font-size: 0.875; /* 14px */
