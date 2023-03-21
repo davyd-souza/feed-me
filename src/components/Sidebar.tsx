@@ -1,3 +1,6 @@
+// COMPONENT
+import { Avatar } from './Avatar'
+
 // STYLE
 import { PencilLine } from 'phosphor-react'
 import styles from './Sidebar.module.css'
@@ -15,12 +18,7 @@ export function Sidebar() {
       />
 
       <section className={styles.profile}>
-        <img
-          className='avatar'
-          data-variant='outline'
-          src='https://github.com/davyd-souza.png'
-          alt='Davyd Souza'
-        />
+        <Avatar src='https://github.com/davyd-souza.png' alt='Davyd Souza' />
         <div className={styles.profile__info}>
           <p className='user__name'>Davyd Souza</p>
           <span className='user__role'>Web Developer</span>

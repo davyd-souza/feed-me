@@ -1,3 +1,6 @@
+// COMPONENT
+import { Avatar } from './Avatar'
+
 // STYLE
 import styles from './Post.module.css'
 import '../styles/global.css'
@@ -9,11 +12,8 @@ export function Post() {
     <article className={styles.post}>
       <header className={styles.post__header}>
         <div className={styles.post__author}>
-          <img
-            className='avatar'
-            data-variant='outline'
+          <Avatar
             src='https://media.licdn.com/dms/image/C4D03AQHLtygtGAmNvg/profile-displayphoto-shrink_200_200/0/1661425529298?e=1684368000&v=beta&t=WulqlIOIU-qikqRYGtWJ-KfDbVk3rIFunOdwopRYCco'
-            loading='lazy'
             alt='Camilly Silva'
           />
           <div>

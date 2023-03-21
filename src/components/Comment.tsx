@@ -1,3 +1,6 @@
+// COMPONENT
+import { Avatar } from './Avatar'
+
 // STYLE
 import styles from './Comment.module.css'
 import { ThumbsUp, Trash } from 'phosphor-react'
@@ -6,11 +9,10 @@ import '../styles/global.css'
 export function Comment() {
   return (
     <article className={styles.comment}>
-      <img
-        className='avatar'
+      <Avatar
         src='https://github.com/davyd-souza.png'
         alt='Davyd Souza'
-        loading='lazy'
+        outline={false}
       />
 
       <section className={styles.comment__container}>
