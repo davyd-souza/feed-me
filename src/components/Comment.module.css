@@ -1,0 +1,33 @@
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.comment + .comment {
+  margin-top: 1.5rem;
+}
+
+.comment__container {
+  flex: 1;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.comment__content {
+  display: grid;
+  gap: 1rem;
+  background-color: hsl(var(--gray-600));
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.comment__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.comment__info {
+  line-height: 1.6;
+}
