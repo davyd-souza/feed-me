@@ -93,6 +93,15 @@ h6 {
   font-size: 0.875; /* 14px */
 }
 
+.date {
+  font-size: 0.875rem;
+  color: hsl(var(--gray-400));
+}
+
+.date[data-size='sm'] {
+  font-size: 0.75rem;
+}
+
 .avatar {
   width: 3rem;
   aspect-ratio: 1;

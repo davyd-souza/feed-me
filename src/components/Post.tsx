@@ -23,7 +23,7 @@ export function Post() {
         </div>
 
         <time
-          className={styles.post__date}
+          className='date'
           title='19th March at 04:36 PM'
           dateTime='2023-19-03 16:36:10'
         >
