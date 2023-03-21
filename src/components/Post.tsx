@@ -3,8 +3,6 @@ import { Avatar } from './Avatar'
 
 // STYLE
 import styles from './Post.module.css'
-import '../styles/global.css'
-import '../styles/button.css'
 import { PaperPlaneRight } from 'phosphor-react'
 
 export function Post() {

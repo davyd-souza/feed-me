@@ -4,8 +4,6 @@ import { Avatar } from './Avatar'
 // STYLE
 import { PencilLine } from 'phosphor-react'
 import styles from './Sidebar.module.css'
-import '../styles/button.css'
-import '../styles/global.css'
 
 export function Sidebar() {
   return (

@@ -4,7 +4,6 @@ import { Avatar } from './Avatar'
 // STYLE
 import styles from './Comment.module.css'
 import { ThumbsUp, Trash } from 'phosphor-react'
-import '../styles/global.css'
 
 export function Comment() {
   return (
