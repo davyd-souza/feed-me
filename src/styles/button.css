@@ -25,6 +25,11 @@
   flex-shrink: 0;
 }
 
+.btn-icon {
+  line-height: 0;
+  padding: 0;
+}
+
 .button[data-variant='fill'] {
   color: hsl(var(--gray-800));
   font-weight: 700;
@@ -48,4 +53,14 @@
 .button[data-variant='outline']:is(:hover, :focus-visible) {
   outline: transparent;
   background-color: hsla(var(--primary-300), 0.1);
+}
+
+.button[data-color='primary']:is(:hover, :focus-visible) {
+  color: hsl(var(--primary-400));
+  outline: transparent;
+}
+
+.button[data-color='danger']:is(:hover, :focus-visible) {
+  color: hsl(var(--red-300));
+  outline: transparent;
 }
