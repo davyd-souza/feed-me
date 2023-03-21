@@ -16,7 +16,8 @@ export function Sidebar() {
 
       <section className={styles.profile}>
         <img
-          className='user__avatar'
+          className='avatar'
+          data-variant='outline'
           src='https://github.com/davyd-souza.png'
           alt='Davyd Souza'
         />

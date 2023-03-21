@@ -10,7 +10,8 @@ export function Post() {
       <header className={styles.post__header}>
         <div className={styles.post__author}>
           <img
-            className='user__avatar'
+            className='avatar'
+            data-variant='outline'
             src='https://media.licdn.com/dms/image/C4D03AQHLtygtGAmNvg/profile-displayphoto-shrink_200_200/0/1661425529298?e=1684368000&v=beta&t=WulqlIOIU-qikqRYGtWJ-KfDbVk3rIFunOdwopRYCco'
             loading='lazy'
             alt='Camilly Silva'
