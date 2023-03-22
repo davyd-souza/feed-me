@@ -57,12 +57,9 @@ export function Post() {
       <div className='separator' />
 
       <form className={styles.comment}>
-        <label className={styles.comment__label} htmlFor='comment-textarea'>
-          Leave your comment
-        </label>
+        <p className={styles.comment__label}>Leave your comment</p>
         <textarea
           className={styles.comment__textarea}
-          id='comment-textarea'
           placeholder='Type your comment...'
         />
 
