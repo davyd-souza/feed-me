@@ -5,7 +5,12 @@ import { Avatar } from './Avatar'
 import styles from './Comment.module.css'
 import { ThumbsUp, Trash } from 'phosphor-react'
 
-export function Comment() {
+// TYPE
+interface CommentProps {
+  content: string
+}
+
+export function Comment({ content }: CommentProps) {
   return (
     <article className={styles.comment}>
       <Avatar
@@ -36,7 +41,7 @@ export function Comment() {
             </button>
           </header>
 
-          <p>Muito bom Camilly, parabéns!! 👏👏</p>
+          <p>{content}</p>
         </div>
 
         <footer className={styles.comment__footer}>
