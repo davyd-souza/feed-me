@@ -1,3 +1,6 @@
+// DEPENDENCY
+import { useState } from 'react'
+
 // COMPONENT
 import { Avatar } from './Avatar'
 
@@ -12,8 +15,14 @@ interface CommentProps {
 }
 
 export function Comment({ content, onDeleteComment }: CommentProps) {
+  const [likeCount, setLikeCount] = useState(0)
+
   const handleDeleteComment = () => {
     onDeleteComment(content)
+  }
+
+  const handleLikeComment = () => {
+    setLikeCount((prevState) => prevState + 1)
   }
 
   return (
@@ -55,9 +64,13 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
         </div>
 
         <footer className={styles.comment__footer}>
-          <button className='button btn-icon' data-color='primary'>
+          <button
+            className='button btn-icon'
+            data-color='primary'
+            onClick={handleLikeComment}
+          >
             <ThumbsUp />
-            20
+            {likeCount}
           </button>
         </footer>
       </section>
