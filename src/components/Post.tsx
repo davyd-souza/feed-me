@@ -36,8 +36,15 @@ export function Post({ author, content, publishedAt }: PostProps) {
     setNewCommentText('')
   }
 
-  const handleCommentTextChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
+  const handleNewCommentTextChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    ;(e.target as HTMLTextAreaElement).setCustomValidity('')
     setNewCommentText(e.target.value as string)
+  }
+
+  const handleNewCommentInvalid = (e: FormEvent<HTMLTextAreaElement>) => {
+    ;(e.target as HTMLTextAreaElement).setCustomValidity(
+      'Este campo é obrigatório'
+    )
   }
 
   const deleteComment = (commentToDelete: string) => {
@@ -47,6 +54,8 @@ export function Post({ author, content, publishedAt }: PostProps) {
 
     setComments(commentsWithoutDeleted)
   }
+
+  const isNewCommentEmpty = newCommentText.length === 0
 
   return (
     <article className={styles.post}>
@@ -96,12 +105,18 @@ export function Post({ author, content, publishedAt }: PostProps) {
         <textarea
           className={styles.comment__textarea}
           placeholder='Type your comment...'
-          onChange={handleCommentTextChange}
+          onChange={handleNewCommentTextChange}
           value={newCommentText}
+          onInvalid={handleNewCommentInvalid}
+          required
         />
 
         <footer className={styles.comment__footer}>
-          <button className='button' data-variant='fill'>
+          <button
+            className='button'
+            data-variant='fill'
+            disabled={isNewCommentEmpty}
+          >
             Comment
             <PaperPlaneRight />
           </button>
