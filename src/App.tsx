@@ -4,12 +4,12 @@ import './lib/dayjs'
 // COMPONENT
 import { Header } from './components/Header'
 import { Sidebar } from './components/Sidebar'
-import { Post } from './components/Post'
+import { Post, IPost } from './components/Post'
 
 // STYLE
 import styles from './App.module.css'
 
-const POSTS = [
+const POSTS: IPost[] = [
   {
     id: 1,
     author: {
@@ -88,13 +88,8 @@ export function App() {
       <div className={styles.container}>
         <Sidebar />
         <main>
-          {POSTS.map(({ id, author, content, publishedAt }) => (
-            <Post
-              key={id}
-              author={author}
-              content={content}
-              publishedAt={publishedAt}
-            />
+          {POSTS.map((post) => (
+            <Post key={post.id} post={post} />
           ))}
         </main>
       </div>

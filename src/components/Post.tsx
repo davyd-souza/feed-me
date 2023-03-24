@@ -18,22 +18,27 @@ interface Author {
 }
 
 interface Content {
-  type: string
+  type: 'paragraph' | 'link'
   content: string
   to?: string
 }
 
-interface PostProps {
+export interface IPost {
+  id: number
   author: Author
   content: Content[]
   publishedAt: Date
 }
 
-export function Post({ author, content, publishedAt }: PostProps) {
+interface PostProps {
+  post: IPost
+}
+
+export function Post({ post }: PostProps) {
   const [comments, setComments] = useState(['Post tooop! 🚀'])
   const [newCommentText, setNewCommentText] = useState('')
 
-  const publishedDateFormated = dayjs(publishedAt).format(
+  const publishedDateFormated = dayjs(post.publishedAt).format(
     'MMMM DD[,] YYYY [at] hh[:]mmA'
   )
 
@@ -69,24 +74,24 @@ export function Post({ author, content, publishedAt }: PostProps) {
     <article className={styles.post}>
       <header className={styles.post__header}>
         <div className={styles.post__author}>
-          <Avatar src={author.avatarUrl} alt={author.name} />
+          <Avatar src={post.author.avatarUrl} alt={post.author.name} />
           <div>
-            <p className='user__name'>{author.name}</p>
-            <span className='user__role'>{author.role}</span>
+            <p className='user__name'>{post.author.name}</p>
+            <span className='user__role'>{post.author.role}</span>
           </div>
         </div>
 
         <time
           className='date'
           title={publishedDateFormated}
-          dateTime={publishedAt.toISOString()}
+          dateTime={post.publishedAt.toISOString()}
         >
-          Published {dayjs(publishedAt).fromNow()}
+          Published {dayjs(post.publishedAt).fromNow()}
         </time>
       </header>
 
       <section className={styles.content}>
-        {content.map((line) => {
+        {post.content.map((line) => {
           if (line.type === 'paragraph') {
             return <p key={line.content}>{line.content}</p>
           } else if (line.type === 'link') {
