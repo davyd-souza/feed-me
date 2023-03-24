@@ -2,6 +2,9 @@
 <p align="center">
   Share posts with your network!
 </p>
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/54182110/227420941-a4c0c7f4-017f-4220-b0a1-4a6e648c2ea3.png" alt="Application layout" />
+</p>
 
 <p align="center">
   <a href="#tech">Technologies</a> •
