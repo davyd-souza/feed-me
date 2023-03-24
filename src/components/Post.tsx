@@ -1,5 +1,5 @@
 // DEPENDENCY
-import { ChangeEvent, FormEvent, useState } from 'react'
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react'
 import dayjs from 'dayjs'
 
 // COMPONENT
@@ -49,7 +49,7 @@ export function Post({ author, content, publishedAt }: PostProps) {
     setNewCommentText(e.target.value as string)
   }
 
-  const handleNewCommentInvalid = (e: FormEvent<HTMLTextAreaElement>) => {
+  const handleNewCommentInvalid = (e: InvalidEvent<HTMLTextAreaElement>) => {
     ;(e.target as HTMLTextAreaElement).setCustomValidity(
       'Este campo é obrigatório'
     )
