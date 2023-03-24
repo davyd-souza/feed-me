@@ -1,4 +1,4 @@
-<h1 align="center">💌 Feed Me <span style="color: #A3A3A3; font-size: 12px; font-weight: 400;">with posts</span></h1>
+<h1 align="center">💌 Feed Me</h1>
 <p align="center">
   Share posts with your network!
 </p>
@@ -16,7 +16,7 @@
 
 ---
 
-<h2 id="tech">🚀 Technologies </h2>
+<h2 id="tech">🚀 Technologies</h2>
 
 <a href="https://reactjs.org/" target="_blank">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -31,7 +31,7 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 </a>
 
-<h2 id="objective">🎯 Objective </h2>
+<h2 id="objective">🎯 Objective</h2>
 
 <p>This project was made following Rocketseat's first class on <a href="https://www.rocketseat.com.br/ignite">Ignite</a>. Where we were introduced to:</p>
 <ul>
@@ -62,7 +62,7 @@
 - [ ] See other people's profile
 - [ ] Better #hashtag support
 
-<h2 id="use">ℹ️ How to Use </h2>
+<h2 id="use">ℹ️ How to Use</h2>
 
 Before cloning the repository into your machine you'll need: [Git](https://git-scm.com) and [NodeJS](https://nodejs.org/en/). Also it is good to have a code editor like [VSCode](https://code.visualstudio.com/).
 
@@ -82,7 +82,7 @@ $ npm start   # or
 $ yarn dev
 ```
 
-<h2 id="author">👤 Author </h2>
+<h2 id="author">👤 Author</h2>
 
 <p>
   Made with 💛 by Davyd Souza </br>
