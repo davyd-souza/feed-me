@@ -11,13 +11,21 @@ import styles from './Post.module.css'
 import { PaperPlaneRight } from 'phosphor-react'
 
 // TYPE
+interface Author {
+  avatarUrl: string
+  name: string
+  role: string
+}
+
+interface Content {
+  type: string
+  content: string
+  to?: string
+}
+
 interface PostProps {
-  author: {
-    avatarUrl: string
-    name: string
-    role: string
-  }
-  content: { type: string; content: string; to?: string }[]
+  author: Author
+  content: Content[]
   publishedAt: Date
 }
 
